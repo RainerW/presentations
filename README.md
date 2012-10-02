@@ -1,5 +1,3 @@
-regular-expressions
+presentations
 ===================
-Lightning Talks slides
-
-http://rainerw.github.com/regular-expressions
+My presentations, view them at : http://rainerw.github.com/presentations
