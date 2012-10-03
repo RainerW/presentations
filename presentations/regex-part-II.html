@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=1024, user-scalable=no">
 
-	<title>RegEx Part I</title>
+	<title>RegEx Part II</title>
 	
 	<!-- Required stylesheet -->
 	<link rel="stylesheet" href="core/deck.core.css">
@@ -17,9 +17,12 @@
 	<link rel="stylesheet" href="extensions/status/deck.status.css">
 	<link rel="stylesheet" href="extensions/hash/deck.hash.css">
 	<link rel="stylesheet" href="extensions/scale/deck.scale.css">
+	<link rel="stylesheet" href="google-code-prettify/prettify.css"/>
+	<link rel="stylesheet" href="google-code-prettify/sons-of-obsidian.css"/>
 
 	<!-- Style theme. More available in /themes/style/ or create your own. -->
 	<link rel="stylesheet" href="themes/style/neon.css">
+	<link rel="stylesheet" href="themes/style/mypatches.css"/>
 	
 	
 	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
@@ -28,18 +31,13 @@
 	<!-- Required Modernizr file -->
 	<script src="modernizr.custom.js"></script>
 	
-	<style type="text/css">
-	.deck-container table {
-		width : 100%;
-	}
-	</style>
 </head>
 <body class="deck-container">
 
 <!-- Begin slides. Just make elements with a class of slide. -->
 
 <section class="slide">
-	<h1>/ RegEx Part I /</h1>
+	<h1>/ RegEx for programmers /</h1>
 	<p>/ SEITENBAU / Lightning Talk / Rainer Weinhold / 2012 /</p>
 </section>
  
@@ -62,7 +60,7 @@
 		</li>
 	</ol>
 </section>
-	
+
 <section class="slide">
 	<h2>Gruppen</h2>
 	<ul>
@@ -132,6 +130,7 @@
 <script>
 	$(function() {
 		$.deck('.slide');
+		prettyPrint();
 	});
 </script>
 </body>

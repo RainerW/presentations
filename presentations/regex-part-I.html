@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="extensions/hash/deck.hash.css">
 	<link rel="stylesheet" href="extensions/scale/deck.scale.css">
 	<link rel="stylesheet" href="google-code-prettify/prettify.css"/>
+	<link rel="stylesheet" href="google-code-prettify/sons-of-obsidian.css"/>
 
 	<!-- Style theme. More available in /themes/style/ or create your own. -->
 	<link rel="stylesheet" href="themes/style/neon.css">
@@ -110,7 +111,7 @@
 
 <section class="slide">
 	<h2>Spezielle Zeichen</h2>
-	<pre  class="prettyprint">Pattern pattern = Pattern.compile("l");
+	<pre  class="prettyprint linenums">Pattern pattern = Pattern.compile("l");
 Matcher matcher = pattern.matcher("Hello World of RegEx!");
 
 while (matcher.find()) 
@@ -118,7 +119,7 @@ while (matcher.find())
 	System.out.println(matcher.group());
 }
 </pre>
-	<pre  class="prettyprint">l
+	<pre  class="prettyprint linenums">l
 l
 l
 </pre>
@@ -253,9 +254,8 @@ l
 <!-- Initialize the deck. You can put this in an external file if desired. -->
 <script>
 	$(function() {
-prettyPrint();
-$.deck('.slide');
-		
+		$.deck('.slide');
+		prettyPrint();
 	});
 </script>
 </body>
