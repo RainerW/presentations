@@ -47,6 +47,7 @@
 		<li class="slide">
 			<h3>Mein RegEx Wissen</h3>
 			<p>zero -> go-to-guy : Alex</p>
+			<a href="http://regex.learncodethehardway.org/book/">Learn Regex The Hard Way</a>
 		</li>
 		<li class="slide">
 			<h3>Angelegt als Serie</h3>
@@ -60,37 +61,41 @@
 		</li>
 	</ol>
 </section>
+
+<section class="slide">
+	<h1>^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$</h1>
+</section>
 	
 <section class="slide">
 	<h2>Spezielle Zeichen</h2>
 	<table><tr>
 	<td>
-	<pre><code>
-	X
-	.
-	( ) 
-	^  bzw. $ 
-	[ ] 
-	\w
-	\s
-	\d
-	\ bzw \.
-	\\ 
-	</code></pre>
+<pre><code
+>X
+.
+( ) 
+[ ] 
+^  bzw. $ 
+\w
+\s
+\d
+\ bzw \.
+\\ 
+</code></pre>
 	</td>
 	<td>
-	<pre><code>
-	Das Zeichen X
-	Wildcard ( nicht Zeilenumbruch! )
-	Gruppierung
-	Anfang bzw. Ende der Zeichenfolge
-	Menge [abc]
-	[a-zA-Z_0-9]
-	Spaces
-	Zahlen
-	Escape sequenz
-	\\ 
-	</code></pre>
+<pre><code
+>Das Zeichen X
+Wildcard ( nicht Zeilenumbruch! )
+Gruppierung
+Menge [abc]
+Anfang bzw. Ende der Zeichenfolge
+[a-zA-Z_0-9]
+Spaces
+Zahlen
+Escape sequenz
+\\ 
+</code></pre>
 	</td>
 	</tr>
 	</table>
@@ -100,11 +105,11 @@
 <section class="slide">
 	<h2>Quantoren</h2>
 	 <ul>
-		<li>X?</li>
-		<li>X*</li>
-		<li>X+</li>
-		<li>X*?</li>
-		<li>X{min,max}</li>
+		<li>X? → optional</li>
+		<li>X* → 0..*</li>
+		<li>X+ → 1..*</li>
+		<li>X*? → 0..* not greedy</li>
+		<li>X{min,max} → min..max</li>
 	</ul>
 	<p><a href="http://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html">http://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html</a></p>
 </section>
@@ -130,6 +135,7 @@ o
 	 <ul>
 		<li>World
 			<h4>Hello <span style="color:red">World</span> of  RegEx!</h4>
+			<h4>Hello <span style="color:red">World</span>s of  RegEx!</h4>
 		</li>
 		<li>[a-z]*		
 			<h4>
@@ -155,6 +161,7 @@ o
 	 <ul>
 		<li>Worlds?
 			<h4>Hello <span style="color:red">World</span> of  RegEx!</h4>
+			<h4>Hello <span style="color:red">Worlds</span> of  RegEx!</h4>
 		</li>
 		<li>World (and|of)
 			<h4>Hello <span style="color:red">World of</span> RegEx!</h4>
@@ -193,14 +200,21 @@ o
 </section>
 
 <section class="slide">
-	<h2>Tools</h2>
-	 <ul>
+	<h2>Stuff</h2>
+	<ul>
 		<li>
-			<a href="http://myregexp.com/eclipsePlugin.html">regex-util</a> 
+			<a href="http://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html">
+			JavaDoc zur Klasse Pattern</a>
+		</li>
+		<li>
+			<a href="http://www.regular-expressions.info/">http://www.regular-expressions.info</a> 
+		</li>
+		<li>
+			Eclipse Plugin : <a href="http://myregexp.com/eclipsePlugin.html">regex-util</a> 
 			( <a href="http://regex-util.sourceforge.net/update/">update-site</a> ) 
 		</li>
 		<li>
-			<a href="http://crotonresearch.com/graphrex/">graphrex</a> 
+			Beim Schreiben gefunden : <a href="http://crotonresearch.com/graphrex/">graphrex</a> 
 			(<a href="http://crotonresearch.com/download_files/graphrex/update-site">update-site</a> ) 
 		</li>
 	</ul>
